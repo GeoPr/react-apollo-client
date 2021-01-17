@@ -1,0 +1,50 @@
+.form {
+  display: grid;
+  grid-template: repeat(2, 40px) / auto;
+  row-gap: 10px;
+  width: 500px;
+  max-width: 100%;
+  // .form__input
+  &__input {
+    padding: 0px 20px;
+    color: #000;
+    border-radius: 10px;
+    // .form__input_text
+    &_text {
+    }
+    // .form__input_number
+    &_number {
+    }
+  }
+  // .form__buttons
+  &__buttons {
+		display: grid;
+		grid-template: 40px / repeat(2, 1fr);
+		column-gap: 30px;
+  }
+  // .form__button
+  &__button {
+		border-radius: 10px;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		transition: all 0.5s ease 0s;
+    // .form__button_create
+    &_create {
+			background: #3b49df;
+			@media (min-width: 991.98px) {
+				&:hover {
+					background: #202cb8;
+				}
+			}
+    }
+    // .form__button_get
+    &_get {
+			background: #6da5eb;
+			@media (min-width: 991.98px) {
+				&:hover {
+					background: #377ccf;
+				}
+			}
+    }
+  }
+}
